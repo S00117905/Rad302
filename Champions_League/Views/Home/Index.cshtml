@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to the Leagues of Champions</h1>
+    <p class="lead">Create your own team and manage the league with this app.</p>
+    <p>@Html.ActionLink("Try it out!", "Index", "Teams")</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>The Sunday League</h2>
+        <p>
+            Check out the teams here.
+        </p>
+        <p>@Html.ActionLink("Get Teams.", "Index", "Teams", null, new { id = 1, @class = "btn-lg btn-success" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Division Leagues</h2>
+        <p>
+            Check out League 1, 2 and 3 here.
+        </p>
+        <p>@Html.ActionLink("Get Teams.", "Index", "Teams", null, new { @class = "btn-lg btn-success" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>The Premier League</h2>
+        <p>
+            Check out the teams here.
+        </p>
+        <p>@Html.ActionLink("Get Teams.", "Index", "Teams", null, new { @class = "btn-lg btn-success" })</p>
+    </div>
+</div>
